@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>StaticPush — One-Click Static Site Hosting</title>
+  <meta name="description" content="Deploy static websites instantly using StaticPush. Upload a ZIP and get a live URL in seconds.">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <div class="logo">StaticPush</div>
+    <div class="nav-links">
+      <a href="#features">Features</a>
+      <a href="#how">How it works</a>
+      <a href="#deploy">Deploy</a>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero">
+    <h1>Free Static Site Hosting</h1>
+    <p>Upload a ZIP file and deploy your static website instantly — no configuration, no CLI.</p>
+    <a href="#deploy" class="btn-primary">Deploy Your Site</a>
+  </section>
+
+  <!-- FEATURES -->
+  <section id="features" class="section">
+  <h2>Why StaticPush?</h2>
+
+  <div class="grid">
+    <div class="card">⚡ Instant Deployment</div>
+    <div class="card">📦 ZIP Upload Support</div>
+    <div class="card">🌍 Globally Accessible</div>
+    <div class="card">🧠 No Technical Setup Required</div>
+    <div class="card">🎓 Free for Students</div>
+  </div>
+</section>
+
+
+  <!-- HOW IT WORKS -->
+  <section id="how" class="section light">
+    <h2>How It Works</h2>
+    <div class="steps">
+      <div class="step">1️⃣ Upload ZIP (must contain <b>index.html</b>)</div>
+      <div class="step">2️⃣ Backend extracts & uploads to cloud</div>
+      <div class="step">3️⃣ Get a live public URL</div>
+    </div>
+  </section>
+
+  <!-- DEPLOY -->
+  <section id="deploy" class="section">
+    <h2>Deploy Your Static Website</h2>
+
+    <div class="deploy-box">
+      <input type="file" id="zipFile" accept=".zip" />
+      <button onclick="deploySite()">Deploy</button>
+
+      <p id="status"></p>
+      <p id="result"></p>
+    </div>
+
+    <p class="note">
+      📌 ZIP must include <b>index.html</b> at root level.
+    </p>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>© 2025 StaticPush • Built using AWS Serverless</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
