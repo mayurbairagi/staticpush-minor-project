@@ -40,7 +40,7 @@ This project was developed as part of a Minor Project to understand serverless a
 ## 📸 Screenshots
 
 ### Project Interface
-![StaticPush Interface](screenshots/staticpush-minor-project.png)
+![StaticPush Interface](screenshots/staticpush-minor-project_index.html.png)
 
 ### Successful Deployment Output
 ![Deployed Output URL](screenshots/deployed_output_url.png)
